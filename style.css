@@ -1,3 +1,4 @@
+
 /******** PB & MT DEW *******************************/
 /******** RESETS ************************************/
 *, html, body, ul, li, h1, h2, h3, h4, h5, h6, form, p { margin: 0; padding: 0; }
@@ -21,7 +22,7 @@ html, html a {
 
 html { background: #ededed url(img/bgbody.gif) repeat-x left bottom; }
 body { background: transparent url(img/bg.jpg) repeat-x; font-family: 'HelveticaNeueLight', Arial, Helvetica, sans-serif; font-size: 14px; color: #454545; text-align: center; }
-
+body.inside { background: transparent url(img/bg-inside.jpg) repeat-x; }
 .wrap { width: 958px; margin: 0 auto; text-align: left; }
 
 /**    #topheader    **/
@@ -72,13 +73,14 @@ body { background: transparent url(img/bg.jpg) repeat-x; font-family: 'Helvetica
 	
 /**    #content   **/
 #content { padding: 20px 5px 0 4px; min-height: 600px; height: auto !important; height: 600px;  }
-.box { padding: 17px 0 17px 36px; width: 266px; background: #fff;-webkit-box-shadow: 0 0 5px #b5a2a2; box-shadow: 0 0 5px #b5a2a2; margin: 0 8px 20px; }
-.box { height: 600px; }
+.box.fullBox { height: auto; margin: 10px 0; width: 919px; padding: 15px; }
+.box { height: 600px; padding: 17px 0 17px 36px; width: 266px; background: #fff;-webkit-box-shadow: 0 0 5px #b5a2a2; box-shadow: 0 0 5px #b5a2a2; margin: 0 8px 20px; }
 .box:first-child  { margin-left: 2px; }
 .box.blue { border-top: 6px solid #0064aa; }
 .box.green { border-top: 6px solid #30aa00; }
 .box.yellow { border-top: 6px solid #e8eb06; }
 .box.orange { border-top: 6px solid #eb5706; }
+.box.neongreen {  border-top: 6px solid #06eb92; }
 .box ul { width: 242px; }
 .box li { margin: 0 0 20px 0; line-height: 20px; }
 .box h2 { text-transform: uppercase; }
@@ -98,13 +100,34 @@ body { background: transparent url(img/bg.jpg) repeat-x; font-family: 'Helvetica
 	.social li:nth-child(4) { background-position: 0 -81px; }
 	.social li:nth-child(5) { background-position: 0 -108px; }
 	.social li:nth-child(6) { background-position: 0 -135px; }
-
+.breadcrumb { text-transform: uppercase; font-size: 11px; }
+.breadcrumb a { text-decoration: underline;  color: #454545;  }
+.breadcrumb a.active, .breadcrumb a:hover { text-decoration: none;  }
+h1.pagetitle { margin: 29px 0 0 0; color: #454545; font-family: 'Exo', sans-serif; font-size: 2.4em; font-weight: normal; }
+#sidebar { width: 316px; }
+	#sidebar .box { height: auto; padding: 0; width: 308px; background: #fff; -webkit-box-shadow: 0 0 5px #b5a2a2; box-shadow: 0 0 5px #b5a2a2; margin: 10px 0; }
+	#sidebar .sidenav { width: 100%; }
+	.sidenav li { line-height: normal; margin: 0; }
+	.sidenav li:first-child  { padding: 5px 0 0; }
+	.sidenav li:last-child   {  padding: 0 0 5px; }
+	.sidenav a { display: block; padding: 10px 0 10px 36px; }
+	.sidenav a:hover, .sidenav a.active { text-decoration: none;  background: #aa0000; color: #fff; }
+	#sidebar h3, #main h3, .fullBox h3 { margin: 10px 0; text-align: center; text-transform: uppercase; font-family: 'Exo', sans-serif; font-weight: normal;  }
+#main h3, .fullBox h3 { margin: 15px 0; text-align: left;  }	
+#main { padding: 0 27px 0 60px; width: 541px; background: #fff; -webkit-box-shadow: 0 0 5px #b5a2a2; box-shadow: 0 0 5px #b5a2a2; margin: 10px 0 10px 5px; }
+#main p { line-height: 23px; }	
+table { width: 100%; border-top: 1px solid #d5d5d5; margin: 15px 0; padding: 10px 0; }
+table th { padding: 10px; background: #d5d5d5; }
+table td { padding: 10px; }
+table tr:nth-child(odd){ background: #fbf4c6; }
+table.design1 th { background: #c6e5fb; }
+table.design1 tr:nth-child(odd){ background: #fbccc6; }
+	
 /* style, variant, weight, size, line-height, family */
 
-#footer  { padding: 0 5px 0 4px; height: 437px; background: url(img/bg-footer.gif) no-repeat; }
+#footer  { font-size: 12px; padding: 0 5px 0 4px; height: 437px; background: url(img/bg-footer.gif) no-repeat; }
 #footer .floatl { width: 27%; margin: 0 3%; }
-#footer .links h3 { margin: 15px 0; }
-#footer h3 { font-size: 13px; text-transform: uppercase; }
+#footer h3 {  margin: 18px 0 8px 0;  font-size: 12px; text-transform: uppercase; }
 #footer a { text-decoration: none !important; text-transform: uppercase; color: #454545; }
 #footer a:hover, #footer a.active { font-weight: bold; }
 #footer li { margin: 0 0 10px 0; }
@@ -138,7 +161,7 @@ html { -webkit-font-smoothing: antialiased; } /* maxvoltar.com/archive/-webkit-f
 
 h1 { font-size: 2.2em; }
 h2 { font-size: 1.5em; }
-h3 { font-size: 18px; }
+h3 { font-size: 1.4em; }
 h4 { font-size: 0.9em; }
 h5 { font-size: 0.7em; }
 h6 { font-size: 0.5em; }
