@@ -111,7 +111,7 @@ h1.pagetitle { margin: 29px 0 0 0; color: #454545; font-family: 'Exo', sans-seri
 	.sidenav li:first-child  { padding: 5px 0 0; }
 	.sidenav li:last-child   {  padding: 0 0 5px; }
 	.sidenav a { display: block; padding: 10px 0 10px 36px; }
-	.sidenav a:hover, .sidenav a.active { text-decoration: none;  background: #aa0000; color: #fff; }
+	.sidenav a:hover, .sidenav a.active { text-decoration: none;  background: #aa0000 url(img/arrow-sidenav.png) no-repeat right center; color: #fff; }
 	#sidebar h3, #main h3, .fullBox h3 { margin: 10px 0; text-align: center; text-transform: uppercase; font-family: 'Exo', sans-serif; font-weight: normal;  }
 #main h3, .fullBox h3 { margin: 15px 0; text-align: left;  }	
 #main { padding: 0 27px 0 60px; width: 541px; background: #fff; -webkit-box-shadow: 0 0 5px #b5a2a2; box-shadow: 0 0 5px #b5a2a2; margin: 10px 0 10px 5px; }
